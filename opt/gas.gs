@@ -22,6 +22,13 @@ const upgrade = async (WARP_CLIENT_ID) => {
   );
 };
 
+// for trigger
 const main = () => {
-  upgrade("your-device-id");
+  upgrade("your-device-id")
+};
+
+// for editor
+const loop = () => {
+  main();
+  Utilities.sleep(Math.random()*100000 + 50000);
 };
