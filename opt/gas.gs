@@ -24,4 +24,4 @@ const upgrade = async (WARP_CLIENT_ID) => {
 
 const main = () => {
   upgrade("your-device-id");
-}
+};
