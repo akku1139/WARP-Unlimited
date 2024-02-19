@@ -16,10 +16,9 @@ const upgrade = async (WARP_CLIENT_ID: string) => {
       fcm_token: install_id + ":APA91b" + randomStr(134),
       referrer: WARP_CLIENT_ID,
       warp_enabled: false,
-      tos: new Date().toISOString().slice(0, -1),
+      tos: new Date().toISOString().slice(0, -1) + "-03:00",
       type: "Android",
       locale: "es_ES",
     })
   });
 };
-
