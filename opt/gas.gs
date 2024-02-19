@@ -29,6 +29,9 @@ const main = () => {
 
 // for editor
 const loop = () => {
-  main();
-  Utilities.sleep(Math.random()*100000 + 50000);
+  while(true) {
+    main();
+    console.log("OK.");
+    Utilities.sleep(Math.random()*100000 + 50000);
+  }
 };
